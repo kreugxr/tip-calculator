@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick TIP</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <header>
+        <h1>Quick TIP</h1> <!-- Main header -->
+    </header>
+    <section id="currencySection">
+        <label for="currencySelector">Currency:</label>
+        <select id="currencySelector">
+            <option value="$">USD</option> <!-- Option for USD -->
+            <option value="€">EUR</option> <!-- Option for EUR -->
+            <option value="R$">BRL</option> <!-- Option for BRL -->
+        </select>
+    </section>
+
+    <section id="tipSection">
+        <div>
+            <label for="inputBill">Bill</label>
+            <input type="number" inputmode="numeric" class="main_input" id="inputBill" placeholder="$" required>
+            <!-- Input for bill amount -->
+        </div>
+        <div>
+            <label for="inputTip">Tip (%)</label>
+            <input type="number" inputmode="numeric" class="main_input" id="inputTip" placeholder="%" required>
+            <!-- Input for tip percentage -->
+        </div>
+        <div>
+            <label for="inputDiv">Split</label>
+            <input type="number" inputmode="numeric" class="main_input" id="inputDiv" placeholder="1" value="1">
+            <!-- Input for number of people to split the bill -->
+        </div>
+        
+        <button onclick="CalculateTip()" id="inputSubmit">Calculate</button> <!-- Button to calculate tip -->
+    </section>
+    
+    <section id="responseSection">
+        <table id="tip_table">
+            <thead>
+                <tr>
+                    <th>Total</th> <!-- Table header for total bill -->
+                    <th>Tip</th> <!-- Table header for tip amount -->
+                    <th>Split</th> <!-- Table header for amount per person -->
+                </tr>
+            </thead>
+            <tbody id="tip_table_body"> <!-- Table body to display calculated values -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script> <!-- Link to JavaScript file for functionality -->
+</body>
+</html>

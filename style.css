@@ -1,0 +1,117 @@
+/* Global reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #dddddd; /* Light gray background */
+}
+
+/* Header styles */
+header {
+    background-color: rgb(40, 40, 40); /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 15px; /* Padding around the header text */
+}
+
+/* Currency section styles */
+#currencySection {
+    text-align: center; /* Center-align text */
+    padding: 10px; /* Padding */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family */
+}
+
+/* Currency selector styles */
+#currencySelector {
+    padding: 2px; /* Padding */
+}
+
+/* Currency selector hover effect */
+#currencySelector:hover {
+    background-color: #e5e5e5; /* Light gray background on hover */
+}
+
+/* Tip section styles */
+#tipSection {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center-align content vertically */
+    align-items: center; /* Center-align content horizontally */
+}
+
+/* Styling for each input section within the tip section */
+#tipSection div {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    padding: 5px; /* Padding */
+}
+
+/* Label styles within input sections */
+#tipSection div label {
+    margin: 5px 0; /* Margin */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family */
+}
+
+/* Input field styles */
+.main_input {
+    padding: 8px; /* Padding */
+    font-family: monospace; /* Monospace font */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; /* Box shadow */
+    width: 350px; /* Initial width */
+}
+
+/* Input field hover effect */
+.main_input:hover {
+    color: black; /* Text color on hover */
+}
+
+/* Button styles within the tip section */
+#tipSection button {
+    margin: 15px; /* Margin */
+    padding: 5px 10px; /* Padding */
+}
+
+/* Response section styles */
+#responseSection {
+    justify-content: center; /* Center-align content horizontally */
+    margin: 10px; /* Margin */
+}
+
+/* Styling for the tip calculation table */
+#tip_table {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width */
+    margin: 0 auto; /* Center-align the table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+/* Styling for table headers and cells */
+#tip_table th, #tip_table td {
+    border: 1px solid #a7a7a7; /* Border */
+    padding: 8px; /* Padding */
+    text-align: center; /* Center-align text */
+}
+
+/* Styling for table headers */
+#tip_table th {
+    background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Media query for responsive design */
+@media only screen and (max-width: 600px) {
+    /* Adjust input field width within tip section for smaller screens */
+    #tipSection div {
+        width: 60%; /* Adjust width */
+    }
+
+    /* Adjust input field width for smaller screens */
+    .main_input {
+        width: 100%; /* Full width */
+    }
+}
