@@ -107,7 +107,7 @@ header {
 @media only screen and (max-width: 600px) {
     /* Adjust input field width within tip section for smaller screens */
     #tipSection div {
-        width: 60%; /* Adjust width */
+        width: 80%; /* Adjust width */
     }
 
     /* Adjust input field width for smaller screens */
