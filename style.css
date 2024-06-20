@@ -113,5 +113,6 @@ header {
     /* Adjust input field width for smaller screens */
     .main_input {
         width: 100%; /* Full width */
+        font-size: 14pt; /* Font size */
     }
 }
