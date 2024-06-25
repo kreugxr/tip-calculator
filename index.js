@@ -41,4 +41,9 @@ function CalculateTip(){
     cell1.textContent = `${actualCurrency} ${formattedTotalBill}`;
     cell2.textContent = `${actualCurrency} ${formattedTip}`;
     cell3.textContent = `${actualCurrency} ${formattedAPP}`;
+
+    // Resets the value of inputs
+    document.getElementById('inputBill').value = '';
+    document.getElementById('inputTip').value = '';
+    document.getElementById('inputDiv').value = '';
 }
