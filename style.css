@@ -16,6 +16,7 @@ header {
     color: #fff; /* White text color */
     text-align: center; /* Center-align text */
     padding: 15px; /* Padding around the header text */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Currency section styles */
@@ -89,6 +90,7 @@ header {
     max-width: 600px; /* Maximum width */
     margin: 0 auto; /* Center-align the table */
     border-collapse: collapse; /* Collapse borders */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Styling for table headers and cells */
@@ -113,6 +115,6 @@ header {
     /* Adjust input field width for smaller screens */
     .main_input {
         width: 100%; /* Full width */
-        font-size: 14pt; /* Font size */
+        font-size: 14pt;
     }
 }
